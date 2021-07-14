@@ -1,0 +1,100 @@
+body {
+  font-family: "Piazzolla", serif;
+  background-color: forestgreen;
+}
+
+.container {
+  background-color: greenyellow;
+  height: 400px;
+}
+nav {
+  background-image: url(images/football.png);
+  background-size: cover;
+  height: 50px;
+}
+nav ul {
+  display: flex;
+}
+nav li {
+  list-style: none;
+  margin-right: 20px;
+}
+nav ul li a {
+  color: antiquewhite;
+  font-size: 15px;
+  font-weight: 400;
+  display: block;
+  text-decoration: none;
+}
+.head-style:hover {
+  border: 2px double skyblue;
+  transform: scale(0.75);
+}
+.head-style {
+  display: flex;
+  height: 300px;
+}
+.header-name {
+  color: ghostwhite;
+  font-size: 30px;
+  font-weight: 400;
+  margin-left: 60px;
+}
+.btn {
+  background-color: coral;
+  font-size: 20px;
+  font-weight: 400;
+  color: whitesmoke;
+  padding: 10px;
+  margin-left: 60px;
+}
+.head-img {
+  height: 300px;
+  border: 2px dashed darkorange;
+  border-radius: 30px;
+  margin-left: 300px;
+}
+h1 {
+  background-color: chartreuse;
+}
+.photo-album {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 2em;
+  background-color: limegreen;
+}
+.photo-frame {
+  width: 203px;
+  height: 400px;
+  border: 2px solid darkviolet;
+  border-radius: 20px;
+  background-color: antiquewhite;
+}
+.photo {
+  width: 200px;
+  border: 1px solid violet;
+  border-radius: 20px;
+}
+
+.field {
+  border: 1px solid;
+  background-image: url(images/football.png);
+
+}
+.field:hover .player1 {
+  transform: rotate(-20deg);
+  transform-origin: top right;
+}
+
+.player1 {
+  transition: transform 0.2s ease in;
+}
+.player2 {
+  margin-left: 70px;
+}
+.fan{
+    background-color: goldenrod;
+}
+.fan-base{
+    display: flex;
+}
