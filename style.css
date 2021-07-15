@@ -1,8 +1,8 @@
 body {
-  font-family: "Piazzolla", serif;
-  background-color: forestgreen;
+  font-family: "Poppins", sans-serif;
+  background-color: antiquewhite;
 }
-
+/* header start */
 .container {
   background-color: greenyellow;
   height: 400px;
@@ -14,7 +14,10 @@ nav {
 }
 nav ul {
   display: flex;
+  margin: 10px;
+  padding: 10px;
 }
+
 nav li {
   list-style: none;
   margin-right: 20px;
@@ -28,11 +31,13 @@ nav ul li a {
 }
 .head-style:hover {
   border: 2px double skyblue;
-  transform: scale(0.75);
+  border-radius: 10px;
+  transform: scale(0.7);
 }
 .head-style {
   display: flex;
   height: 300px;
+  background-color: forestgreen;
 }
 .header-name {
   color: ghostwhite;
@@ -45,8 +50,9 @@ nav ul li a {
   font-size: 20px;
   font-weight: 400;
   color: whitesmoke;
-  padding: 10px;
+  padding: 7px;
   margin-left: 60px;
+  border-radius: 10px;
 }
 .head-img {
   height: 300px;
@@ -54,47 +60,133 @@ nav ul li a {
   border-radius: 30px;
   margin-left: 300px;
 }
+/* header end */
+/* main portion start */
+.player {
+  width: 500px;
+  margin-left: 300px;
+}
 h1 {
-  background-color: chartreuse;
+  color: darkgreen;
+  margin-left: 250px;
+  border: 2px solid salmon;
+  padding-left: 55px;
 }
 .photo-album {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 2em;
-  background-color: limegreen;
 }
 .photo-frame {
-  width: 203px;
-  height: 400px;
+  width: 201px;
+  height: 330px;
   border: 2px solid darkviolet;
   border-radius: 20px;
-  background-color: antiquewhite;
+  background-color: rgb(169, 165, 223);
 }
 .photo {
   width: 200px;
+  height: 180px;
   border: 1px solid violet;
   border-radius: 20px;
 }
+.photo-details {
+  padding: 7px;
+}
+.photo-details h3 {
+  padding: 0%;
+  margin: 0%;
+  text-decoration: underline;
+  color: blue;
+}
 
+.animation {
+  margin-top: 20px;
+}
 .field {
-  border: 1px solid;
+  border: 1px solid antiquewhite;
   background-image: url(images/football.png);
-
+  background-repeat: no-repeat;
+  margin-left: 250px;
 }
 .field:hover .player1 {
   transform: rotate(-20deg);
   transform-origin: top right;
 }
-
+.field:hover .player2 {
+  transform: rotate(20deg);
+  transform-origin: top right;
+}
+.field:hover .ball {
+  transform: rotate(20deg);
+  transform-origin: top right;
+  transform: translate(60px, -60px);
+}
+.ball {
+  width: 100px;
+  margin-bottom: 50px;
+  padding-left: 0px;
+}
 .player1 {
   transition: transform 0.2s ease in;
 }
 .player2 {
+  margin-top: 100px;
   margin-left: 70px;
 }
-.fan{
-    background-color: goldenrod;
+
+.fan {
+  display: flex;
+  background-image: url(images/field.jpg);
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  margin-left: 100px;
 }
-.fan-base{
-    display: flex;
+.fan-h1 {
+  background-color: goldenrod;
+  margin-left: 100px;
+}
+.fan-write {
+  margin-left: 150px;
+  margin-top: 20px;
+}
+.fan-write p {
+  font-size: large;
+  font-weight: bolder;
+}
+/* main portion end */
+/* footer start */
+.foot {
+  margin-top: 100px;
+  background-color: black;
+  padding: 10px;
+}
+.logo {
+  width: 130px;
+  height: 50px;
+  margin-left: 43%;
+  border: 2px dashed coral;
+  border-radius: 15px;
+}
+.whole {
+  margin-left: 43%;
+}
+.link-style {
+  padding: 10px;
+}
+.link-style a {
+  padding: 9px;
+  color: aqua;
+}
+.copy {
+  color: aqua;
+  padding: 7px;
+}
+/* footer end */
+
+@media only screen and (max-width: 600px) {
+  .head-style {
+    flex-direction: column;
+   border: 2px solid ;
+  }
 }

@@ -1,0 +1,28 @@
+.tab {
+  display: flex;
+  justify-content: space-between;
+}
+
+.photo-album {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  width: 80%;
+  grid-gap: 34px 17px;
+  margin-left: 144px;
+}
+.photo-frame {
+  width: 300px;
+  border: 2px solid red;
+}
+img {
+  width: 280px;
+  margin: auto;
+}
+@media only screen and (max-width: 590px) {
+  .photo-album {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
